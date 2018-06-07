@@ -8,7 +8,6 @@
 /////////////////////////////////////////
 // SEARCH
 .search {
-  background-color: orangered;
   flex: 0 0 40%;
 
   display: flex;
@@ -31,6 +30,11 @@
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-3);
     }
   }
 
@@ -61,6 +65,18 @@
 // USER NAVIGATION
 .user-nav {
   background-color: greenyellow;
+  display: flex;
+  align-items: center;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
   &__icon-box {
   }
   &__icon {
