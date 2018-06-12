@@ -209,6 +209,7 @@
 
   &__stars {
     margin-right: auto;
+    display: flex;
   }
 
   &__icon-star,
@@ -229,4 +230,13 @@
 
   &__rating-count {
   }
+}
+
+//////////////////////////////////////
+// BUTTON INLINE
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
 }
